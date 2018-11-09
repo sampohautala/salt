@@ -13,3 +13,10 @@ ufw:
   file.managed:
     - source: salt://ufw/user6.rules
 
+ufw.service:
+  service.running:
+    - name: ufw
+    - watch:
+      - file: /etc/ufw/ufw.conf
+      - file: /etc/ufw/user.rules
+      - file: /etc/ufw/user6.rules
