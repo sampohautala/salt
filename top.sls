@@ -1,0 +1,5 @@
+base:
+  '*':
+    - ssh
+    - apache
+    - terminal
