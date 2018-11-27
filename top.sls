@@ -1,6 +1,6 @@
 base:
   '*':
-    - ssh
+    - php
     - apache
-    - terminal
+    - mariadb
     - ufw
