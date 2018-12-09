@@ -3,3 +3,8 @@ base:
     - apache
     - php
     - gitgedit
+    - ufw
+
+  'winslave':
+    - winprograms
+
