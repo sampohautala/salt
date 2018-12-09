@@ -5,6 +5,12 @@ apache2:
  file.managed:
    - source: salt://apache/default-index.html
 
+/home/xubuntu/public_html/index.html:
+  file.managed:
+    - mode: 666
+    - source: salt://apache/index.html
+    - makedirs: True
+
 /etc/apache2/mods-enabled/userdir.conf:
  file.symlink:
    - target: ../mods-available/userdir.conf

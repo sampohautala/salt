@@ -1,6 +1,5 @@
 base:
-  '*':
-    - php
+  'linuxorja':
     - apache
-    - mariadb
-    - ufw
+    - php
+    - gitgedit
