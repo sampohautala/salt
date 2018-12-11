@@ -7,7 +7,7 @@ apache2:
 
 /home/xubuntu/public_html/index.html:
   file.managed:
-    - mode: 666
+    - mode: 660
     - source: salt://apache/index.html
     - makedirs: True
 
